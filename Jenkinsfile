@@ -45,7 +45,7 @@ pipeline {
                     snykTokenId: 'snyk-token',
                     targetFile: 'requirements.txt',
                     additionalArguments: '--command=venv/bin/python',
-                    failOnIssues: false,
+                    failOnIssues: true,
                     failOnError: true,
                     monitorProjectOnBuild: false
                 )
